@@ -1,5 +1,1 @@
-
-
-line.html in the line folder is an example of using JavaScript.
-
-index.html is the home page
+This site serves as a library of examples for HTML, CSS, and JavaScript code.
