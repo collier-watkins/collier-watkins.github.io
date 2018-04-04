@@ -4,18 +4,47 @@
 	
 	<link rel="stylesheet" href="style.css">
 	
+	
+	<style>
+	 
+	
+	</style>
+	
+	
 </head>
 <body>
-<h1> Howdy! This Website is Hosted on GitHub! </h1>
 
 
-<div>
+<div id="navBar" style="display: block; background-color: purple; width: 100px; height: 100%; float:left; padding-right: 30px;">
   <center> <a href="null">Services</a>  <a href="null">Contact Us</a> </center>
 </div>
 
+<form style="float: right;">
+Username: 
+<input type="text" name="username"> <br>
+Password: 
+<input type="password" name="password"> <br>
+
+
+</form>
+
+
+
+
+<h1> Howdy! This Website is Hosted on GitHub! </h1>
 
 
 <p> This basic site is designed to be an example of HTML and CSS code and a resource for helpful information online.</p>
+
+<br>
+
+
+<center>
+
+
+</center>
+
+<br>
 
 <h2> External Links: </h2>
 <ul>
@@ -27,21 +56,38 @@
 
 <h2> Internal Example Pages: </h2>
 <ul>
-	<li><a href="snakeGame/snake.html"> Snake - JavaScript Embed Example </a></li>
-
+	<li><a href="pongGame/pong.html"> Pong - JavaScript Embed Example </a></li>1
 </ul>
 
 
 
-<center> <iframe
-	width="560"
-	height="315"
-	src="https://www.youtube.com/embed/SsoZky3rQwQ"
-	frameborder="0"
-	allow="autoplay;
-	encrypted-media"
-	allowfullscreen>
-</iframe> </center>
+<button style="margin: -20px -50px; position:relative; top:50%; left:50%;" id="mapButton" onclick="showNavBar()"> Show Map </button>
+
+<div id="googleMap" style="display: none;">
+<center>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!112!1m3!1d3432.6228459101035!2d-96.35219918451426!3d30.64458509692589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864683d94656a589%3A0xc53fbde7159b8ad0!2sCommunity+Homeschool+Center!5e0!3m2!1sen!2sus!4v1522090370698" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</center>
+</div>
+
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeYycLIFRxgk8nVeHM-AQ90r4NJ6HtpmrqKZUSrMWLzUvVlmA/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+<script>
+
+function showNavBar(){
+         var obj = document.getElementById("googleMap");
+         
+		 if(obj.style.display == "none"){
+			obj.style.display = "block";
+		 }
+		 else{
+			obj.style.display = "none";
+		 }
+		 
+		 
+}
+
+</script>
 
 
 </body>
